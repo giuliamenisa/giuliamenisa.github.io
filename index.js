@@ -11,30 +11,32 @@ for (var i = 0; i < skills.length; i++) {
 skillsEl.innerHTML = skillsHTML;
 
 function hideAllPages() {
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("skills").style.display = "none";
+  document.getElementById("home").style.display = "none";
   document.getElementById("langueges").style.display = "none";
   document.getElementById("project").style.display = "none";
-  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+}
+
+function show(id) {
+  document.getElementById("skills").style.display = "block";
 }
 
 function dislpayHome() {
   hideAllPages();
-  document.getElementById("home").style.display = "block";
+  show("home");
 }
 function displaySkills() {
   hideAllPages();
   console.warn("trebuie sa afisam skills page");
-
-  document.getElementById("skills").style.display = "block";
+  show("skills");
 }
 function displayLanguages() {
   hideAllPages();
-  document.getElementById("languages").style.display = "block";
+  show("languages");
 }
 function displayProject() {
   hideAllPages();
-  document.getElementById("project").style.display = "block";
+  show("project");
 }
 
 dislpayHome();

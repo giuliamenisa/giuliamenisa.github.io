@@ -23,10 +23,10 @@
       </p>
 
       <ul id="top-meniu-bar">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Known Languages</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#" onclick="displayHome()">HOME</a></li>
+        <li><a href="#" onclick="displaySkills()">Skills</a></li>
+        <li><a href="#" onclick="displayLanguages()">Known Languages</a></li>
+        <li><a href="#" onclick="displayProject()">Projects</a></li>
       </ul>
     </header>
 
@@ -36,95 +36,78 @@
           <form action="">
             <div>
               <label for="subscriberEmail">Enter your Email</label>
-              <input type="email"
-              required="requaiered"
-              name="subcsriberEmail"
-              id=""
-              placeholder="your@email.com"
-            >
+              <input
+                type="email"
+                required="requaiered"
+                name="subcsriberEmail"
+                id=""
+                placeholder="your@email.com"
+              />
             </div>
             <div>
               <label for="subscriber">Name:</label>
-              <input type="text" requaiered name="nume" id="subscriber" placeholder="Full Name">
+              <input
+                type="text"
+                requaiered
+                name="nume"
+                id="subscriber"
+                placeholder="Full Name"
+              />
               <button type="submit">Subscribe</button>
             </div>
           </form>
         </section>
 
-        <section>
-          to be continued
-        </section>
+        <section>to be continued</section>
       </div>
 
       <div id="main">
-        <div class="page">
+        <div id="home" class="page">
+          <h2>Home</h2>
+
+          <p>Some info about me ... coming soon!</p>
+        </div>
+
+        <div id="skills" class="page">
           <h2>Skills</h2>
-          <ul>
+
+          <ul id="skills-list">
             <li style="color: blueviolet"><strong> HTML</strong></li>
-            <li style="font-weight: bold; font-style: italic; color: aquamarine">
+            <li
+              style="font-weight: bold; font-style: italic; color: aquamarine"
+            >
               CSS
             </li>
             <li>JS</li>
           </ul>
         </div>
 
-      <div class="page">
-        <h2>Know Languages</h2>
-        <table border="1">
-          <tr>
-            <th>Language</th>
-            <th>Level1</th>
-          </tr>
-          <tr>
-            <td>Romanian</td>
-            <td>Native</td>
-          </tr>
-          <tr>
-            <td>English</td>
-            <td>Proficient</td>
-          </tr>
-        </table>
+        <div id="knows-languages" class="page">
+          <h2>Know Languages</h2>
+          <table border="1">
+            <tr>
+              <th>Language</th>
+              <th>Level1</th>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Proficient</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="projects" class="page"></div>
       </div>
     </section>
 
-
-
-      <footer>
-    <a target="_blank" href="https://www.google.com">Google</a>
+    <footer>
+      <a target="_blank" href="https://www.google.com">Google</a>
     </footer>
 
-    
-    <script <script>
-      //asa vreau eu!
-      console.info("page loaded");
-      console.debug(2 + 3);
-      console.warn(2 * (3 + 1));
-
-      var employed = true;
-      console.error(employed);
-
-      var age = 24; // number
-
-      var user = "Giulia";
-      console.info(user);
-      user = user + "Faragau";
-      console.info(user);
-
-      var skills = ["html", "css", "js"];
-      var dan = {
-        age:26
-        employed: true
-
-      }
-
-      var giulia = {
-        age:26
-        employed: true
-
-      }
-
-
-      var jobTitle = document.getElementById("job-title")
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
