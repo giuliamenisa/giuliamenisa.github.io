@@ -1,0 +1,118 @@
+header,
+footer,
+#content {
+  padding: 4px;
+  margin: 2px;
+  border: 5px solid #2196f3;
+  background-color: #d3eafd;
+}
+
+#content > div,
+#side-menu > section {
+  padding: 4px;
+  margin: 2px;
+  border: 2px solid red;
+}
+
+#side-menu > section {
+  border-color: green;
+}
+
+body {
+  background-color: #f3f2ef;
+}
+
+td {
+  color: darkcyan;
+  border-color: aquamarine;
+}
+
+#subscriberEmail {
+  background: yellowgreen;
+}
+
+#job-title {
+  text-align: center;
+  color: chartreuse;
+}
+
+.favorite {
+  font-weight: bold;
+  color: blue;
+}
+
+.table {
+  border: 1px black solid;
+  background-color: #6b90ad;
+  margin: 10px;
+  margin-right: 70%;
+}
+
+.skills {
+  border: 2px black solid;
+  background-color: #6b90ad;
+  margin: 10px;
+  margin-right: 65%;
+}
+
+.page {
+  border: 2px solid #e0dfdc;
+  background-color: #ffff;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#top-meniu-bar {
+  text-align: center;
+  background-color: #334455;
+  color: #fff;
+}
+
+#top-meniu-bar li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#top-meniu-bar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 5px 10px;
+  display: inline-block;
+}
+
+#top-meniu-bar a:hover {
+  color: #334455;
+  background-color: #fff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #f3f2ef;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#side-menu {
+  flex: 1;
+}
+
+#main {
+  flex: 2;
+}
+
+img {
+  border-radius: 100%;
+}
