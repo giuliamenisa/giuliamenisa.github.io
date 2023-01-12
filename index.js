@@ -11,17 +11,20 @@ for (var i = 0; i < skills.length; i++) {
 skillsEl.innerHTML = skillsHTML;
 
 function hideAllPages() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("langueges").style.display = "none";
-  document.getElementById("project").style.display = "none";
-  document.getElementById("skills").style.display = "none";
+  hide("home");
+  hide("languages");
+  hide("projects");
+  hide("skills");
 }
 
 function show(id) {
-  document.getElementById("skills").style.display = "block";
+  document.getElementById(id).style.display = "block";
+}
+function hide(id) {
+  document.getElementById(id).style.display = "none";
 }
 
-function dislpayHome() {
+function displayHome() {
   hideAllPages();
   show("home");
 }
@@ -39,4 +42,4 @@ function displayProject() {
   show("project");
 }
 
-dislpayHome();
+displayHome();
