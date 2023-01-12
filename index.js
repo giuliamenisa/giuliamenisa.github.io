@@ -29,22 +29,9 @@ function hide(id) {
   document.getElementById(id).style.display = "none";
 }
 
-function displayHome() {
+function displayPages(id) {
   hideAllPages();
-  show("home");
-}
-function displaySkills() {
-  hideAllPages();
-  console.warn("trebuie sa afisam skills page");
-  show("skills");
-}
-function displayLanguages() {
-  hideAllPages();
-  show("languages");
-}
-function displayProject() {
-  hideAllPages();
-  show("project");
+  show(id);
 }
 
-displayHome();
+displayPages("home");
