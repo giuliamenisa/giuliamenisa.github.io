@@ -134,3 +134,11 @@ body {
 img {
   border-radius: 100%;
 }
+
+#skills-list li {
+  font-weight: bold;
+}
+
+#skills-list span {
+  color: gray;
+}
